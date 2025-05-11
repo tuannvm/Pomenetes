@@ -74,5 +74,23 @@
    <ArchiveAction
       buildConfiguration = "Release"
       revealArchiveInOrganizer = "YES">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;APP_PATH=&quot;${ARCHIVE_PATH}/Products/Applications/Pomenetes.app&quot;&#10;HELPER_ZIP=&quot;${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/LaunchAtLoginHelper.zip&quot;&#10;LOGIN_ITEMS_DIR=&quot;${APP_PATH}/Contents/Library/LoginItems&quot;&#10;&#10;mkdir -p &quot;${LOGIN_ITEMS_DIR}&quot;&#10;ditto -x -k &quot;${HELPER_ZIP}&quot; &quot;${LOGIN_ITEMS_DIR}/LaunchAtLoginHelper.app&quot;&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "8A21B78727EE31A20009E5DB"
+                     BuildableName = "Pomenetes.app"
+                     BlueprintName = "Pomenetes"
+                     ReferencedContainer = "container:Pomenetes.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
    </ArchiveAction>
 </Scheme>

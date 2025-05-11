@@ -19,11 +19,11 @@
 		EE00414D2DD0188F004CE0A1 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE00413F2DD0188F004CE0A1 /* MaskView.swift */; };
 		EE00414E2DD0188F004CE0A1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0041412DD0188F004CE0A1 /* Player.swift */; };
 		EE00414F2DD0188F004CE0A1 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0041432DD0188F004CE0A1 /* Timer.swift */; };
-		EE0041502DD0188F004CE0A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE00413C2DD0188F004CE0A1 /* Localizable.strings */; };
 		EE0041512DD0188F004CE0A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE0041332DD0188F004CE0A1 /* Info.plist */; };
 		EE0041522DD0188F004CE0A1 /* macos-focus-mode.shortcut in Resources */ = {isa = PBXBuildFile; fileRef = EE00413E2DD0188F004CE0A1 /* macos-focus-mode.shortcut */; };
 		EE0041532DD0188F004CE0A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0041312DD0188F004CE0A1 /* Assets.xcassets */; };
 		EE0041542DD0188F004CE0A1 /* Pomenetes.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = EE0041442DD0188F004CE0A1 /* Pomenetes.entitlements */; };
+		EEDBBF332DD055A200F64A56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEDBBF312DD055A200F64A56 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +33,6 @@
 		EE0041322DD0188F004CE0A1 /* DND.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DND.swift; sourceTree = "<group>"; };
 		EE0041332DD0188F004CE0A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE0041342DD0188F004CE0A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EE0041352DD0188F004CE0A1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EE0041362DD0188F004CE0A1 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EE0041372DD0188F004CE0A1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EE0041382DD0188F004CE0A1 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EE0041392DD0188F004CE0A1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EE00413A2DD0188F004CE0A1 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		EE00413B2DD0188F004CE0A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EE00413D2DD0188F004CE0A1 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		EE00413E2DD0188F004CE0A1 /* macos-focus-mode.shortcut */ = {isa = PBXFileReference; lastKnownFileType = file; path = "macos-focus-mode.shortcut"; sourceTree = "<group>"; };
 		EE00413F2DD0188F004CE0A1 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
@@ -49,6 +42,7 @@
 		EE0041432DD0188F004CE0A1 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		EE0041442DD0188F004CE0A1 /* Pomenetes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pomenetes.entitlements; sourceTree = "<group>"; };
 		EE0041452DD0188F004CE0A1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		EEDBBF322DD055A200F64A56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Pomenetes/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +62,7 @@
 		8A21B77F27EE31A20009E5DB = {
 			isa = PBXGroup;
 			children = (
+				EEDBBF312DD055A200F64A56 /* Localizable.strings */,
 				EE0041462DD0188F004CE0A1 /* Pomenetes */,
 				8A21B78927EE31A20009E5DB /* Products */,
 				8A9F700D27EE3AED0012A1EC /* Frameworks */,
@@ -96,7 +91,7 @@
 				EE0041312DD0188F004CE0A1 /* Assets.xcassets */,
 				EE0041322DD0188F004CE0A1 /* DND.swift */,
 				EE0041332DD0188F004CE0A1 /* Info.plist */,
-				EE00413C2DD0188F004CE0A1 /* Localizable.strings */,
+				EE0041342DD0188F004CE0A1 /* en */,
 				EE00413D2DD0188F004CE0A1 /* Log.swift */,
 				EE00413E2DD0188F004CE0A1 /* macos-focus-mode.shortcut */,
 				EE00413F2DD0188F004CE0A1 /* MaskView.swift */,
@@ -120,7 +115,6 @@
 				8A21B78427EE31A20009E5DB /* Sources */,
 				8A21B78527EE31A20009E5DB /* Frameworks */,
 				8A21B78627EE31A20009E5DB /* Resources */,
-				8A7403A127FA1A4E00E7F90B /* Copy “Launch at Login Helper” */,
 			);
 			buildRules = (
 			);
@@ -158,13 +152,6 @@
 			knownRegions = (
 				en,
 				Base,
-				"zh-Hans",
-				ja,
-				it,
-				de,
-				fr,
-				el,
-				"pt-BR",
 			);
 			mainGroup = 8A21B77F27EE31A20009E5DB;
 			packageReferences = (
@@ -186,7 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0041502DD0188F004CE0A1 /* Localizable.strings in Resources */,
+				EEDBBF332DD055A200F64A56 /* Localizable.strings in Resources */,
 				EE0041512DD0188F004CE0A1 /* Info.plist in Resources */,
 				EE0041522DD0188F004CE0A1 /* macos-focus-mode.shortcut in Resources */,
 				EE0041532DD0188F004CE0A1 /* Assets.xcassets in Resources */,
@@ -195,32 +182,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		8A7403A127FA1A4E00E7F90B /* Copy “Launch at Login Helper” */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/LaunchAtLoginHelper.zip",
-			);
-			name = "Copy “Launch at Login Helper”";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}/Contents/Library/LoginItems/LaunchAtLoginHelper.app",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"$ACTION\" != \"install\" ]; then \
-mkdir -p \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}/Contents/Library/LoginItems\" && \
-ditto -x -k \"${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/LaunchAtLoginHelper.zip\" \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}/Contents/Library/LoginItems/LaunchAtLoginHelper.app\"; fi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A21B78427EE31A20009E5DB /* Sources */ = {
@@ -242,17 +203,10 @@ ditto -x -k \"${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE00413C2DD0188F004CE0A1 /* Localizable.strings */ = {
+		EEDBBF312DD055A200F64A56 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EE0041342DD0188F004CE0A1 /* en */,
-				EE0041352DD0188F004CE0A1 /* de */,
-				EE0041362DD0188F004CE0A1 /* el */,
-				EE0041372DD0188F004CE0A1 /* fr */,
-				EE0041382DD0188F004CE0A1 /* it */,
-				EE0041392DD0188F004CE0A1 /* ja */,
-				EE00413A2DD0188F004CE0A1 /* pt-BR */,
-				EE00413B2DD0188F004CE0A1 /* zh-Hans */,
+				EEDBBF322DD055A200F64A56 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
