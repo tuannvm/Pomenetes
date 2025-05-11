@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A7403A027FA19BB00E7F90B /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 8A74039F27FA19BB00E7F90B /* LaunchAtLogin */; };
+		8A8CFE402821D8C300F9F303 /* SwiftState in Frameworks */ = {isa = PBXBuildFile; productRef = 8A8CFE3F2821D8C300F9F303 /* SwiftState */; };
+		8AA5B3EB281295DB00BE1A6C /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 8AA5B3EA281295DB00BE1A6C /* KeyboardShortcuts */; };
+		EE0041472DD0188F004CE0A1 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0041402DD0188F004CE0A1 /* Notifications.swift */; };
+		EE0041482DD0188F004CE0A1 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0041422DD0188F004CE0A1 /* State.swift */; };
+		EE0041492DD0188F004CE0A1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0041452DD0188F004CE0A1 /* View.swift */; };
+		EE00414A2DD0188F004CE0A1 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE00413D2DD0188F004CE0A1 /* Log.swift */; };
+		EE00414B2DD0188F004CE0A1 /* DND.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0041322DD0188F004CE0A1 /* DND.swift */; };
+		EE00414C2DD0188F004CE0A1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0041302DD0188F004CE0A1 /* App.swift */; };
+		EE00414D2DD0188F004CE0A1 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE00413F2DD0188F004CE0A1 /* MaskView.swift */; };
+		EE00414E2DD0188F004CE0A1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0041412DD0188F004CE0A1 /* Player.swift */; };
+		EE00414F2DD0188F004CE0A1 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0041432DD0188F004CE0A1 /* Timer.swift */; };
+		EE0041512DD0188F004CE0A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE0041332DD0188F004CE0A1 /* Info.plist */; };
+		EE0041522DD0188F004CE0A1 /* macos-focus-mode.shortcut in Resources */ = {isa = PBXBuildFile; fileRef = EE00413E2DD0188F004CE0A1 /* macos-focus-mode.shortcut */; };
+		EE0041532DD0188F004CE0A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0041312DD0188F004CE0A1 /* Assets.xcassets */; };
+		EE0041542DD0188F004CE0A1 /* Pomenetes.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = EE0041442DD0188F004CE0A1 /* Pomenetes.entitlements */; };
+		EEDBBF332DD055A200F64A56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEDBBF312DD055A200F64A56 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A21B78827EE31A20009E5DB /* Pomenetes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomenetes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0041302DD0188F004CE0A1 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		EE0041312DD0188F004CE0A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE0041322DD0188F004CE0A1 /* DND.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DND.swift; sourceTree = "<group>"; };
+		EE0041332DD0188F004CE0A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE0041342DD0188F004CE0A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EE00413D2DD0188F004CE0A1 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		EE00413E2DD0188F004CE0A1 /* macos-focus-mode.shortcut */ = {isa = PBXFileReference; lastKnownFileType = file; path = "macos-focus-mode.shortcut"; sourceTree = "<group>"; };
+		EE00413F2DD0188F004CE0A1 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
+		EE0041402DD0188F004CE0A1 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		EE0041412DD0188F004CE0A1 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EE0041422DD0188F004CE0A1 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		EE0041432DD0188F004CE0A1 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		EE0041442DD0188F004CE0A1 /* Pomenetes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pomenetes.entitlements; sourceTree = "<group>"; };
+		EE0041452DD0188F004CE0A1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		EEDBBF322DD055A200F64A56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Pomenetes/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A21B78527EE31A20009E5DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7403A027FA19BB00E7F90B /* LaunchAtLogin in Frameworks */,
+				8AA5B3EB281295DB00BE1A6C /* KeyboardShortcuts in Frameworks */,
+				8A8CFE402821D8C300F9F303 /* SwiftState in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A21B77F27EE31A20009E5DB = {
+			isa = PBXGroup;
+			children = (
+				EEDBBF312DD055A200F64A56 /* Localizable.strings */,
+				EE0041462DD0188F004CE0A1 /* Pomenetes */,
+				8A21B78927EE31A20009E5DB /* Products */,
+				8A9F700D27EE3AED0012A1EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A21B78927EE31A20009E5DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A21B78827EE31A20009E5DB /* Pomenetes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A9F700D27EE3AED0012A1EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE0041462DD0188F004CE0A1 /* Pomenetes */ = {
+			isa = PBXGroup;
+			children = (
+				EE0041302DD0188F004CE0A1 /* App.swift */,
+				EE0041312DD0188F004CE0A1 /* Assets.xcassets */,
+				EE0041322DD0188F004CE0A1 /* DND.swift */,
+				EE0041332DD0188F004CE0A1 /* Info.plist */,
+				EE0041342DD0188F004CE0A1 /* en */,
+				EE00413D2DD0188F004CE0A1 /* Log.swift */,
+				EE00413E2DD0188F004CE0A1 /* macos-focus-mode.shortcut */,
+				EE00413F2DD0188F004CE0A1 /* MaskView.swift */,
+				EE0041402DD0188F004CE0A1 /* Notifications.swift */,
+				EE0041412DD0188F004CE0A1 /* Player.swift */,
+				EE0041422DD0188F004CE0A1 /* State.swift */,
+				EE0041432DD0188F004CE0A1 /* Timer.swift */,
+				EE0041442DD0188F004CE0A1 /* Pomenetes.entitlements */,
+				EE0041452DD0188F004CE0A1 /* View.swift */,
+			);
+			path = Pomenetes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A21B78727EE31A20009E5DB /* Pomenetes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A21B79727EE31A30009E5DB /* Build configuration list for PBXNativeTarget "Pomenetes" */;
+			buildPhases = (
+				8A21B78427EE31A20009E5DB /* Sources */,
+				8A21B78527EE31A20009E5DB /* Frameworks */,
+				8A21B78627EE31A20009E5DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pomenetes;
+			packageProductDependencies = (
+				8A74039F27FA19BB00E7F90B /* LaunchAtLogin */,
+				8AA5B3EA281295DB00BE1A6C /* KeyboardShortcuts */,
+				8A8CFE3F2821D8C300F9F303 /* SwiftState */,
+			);
+			productName = Pomenetes;
+			productReference = 8A21B78827EE31A20009E5DB /* Pomenetes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A21B78027EE31A20009E5DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					8A21B78727EE31A20009E5DB = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 8A21B78327EE31A20009E5DB /* Build configuration list for PBXProject "Pomenetes" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A21B77F27EE31A20009E5DB;
+			packageReferences = (
+				8A74039E27FA19BB00E7F90B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+				8AA5B3E9281295DB00BE1A6C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				8A8CFE3E2821D8C300F9F303 /* XCRemoteSwiftPackageReference "SwiftState" */,
+			);
+			productRefGroup = 8A21B78927EE31A20009E5DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A21B78727EE31A20009E5DB /* Pomenetes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A21B78627EE31A20009E5DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDBBF332DD055A200F64A56 /* Localizable.strings in Resources */,
+				EE0041512DD0188F004CE0A1 /* Info.plist in Resources */,
+				EE0041522DD0188F004CE0A1 /* macos-focus-mode.shortcut in Resources */,
+				EE0041532DD0188F004CE0A1 /* Assets.xcassets in Resources */,
+				EE0041542DD0188F004CE0A1 /* Pomenetes.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A21B78427EE31A20009E5DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0041472DD0188F004CE0A1 /* Notifications.swift in Sources */,
+				EE0041482DD0188F004CE0A1 /* State.swift in Sources */,
+				EE0041492DD0188F004CE0A1 /* View.swift in Sources */,
+				EE00414A2DD0188F004CE0A1 /* Log.swift in Sources */,
+				EE00414B2DD0188F004CE0A1 /* DND.swift in Sources */,
+				EE00414C2DD0188F004CE0A1 /* App.swift in Sources */,
+				EE00414D2DD0188F004CE0A1 /* MaskView.swift in Sources */,
+				EE00414E2DD0188F004CE0A1 /* Player.swift in Sources */,
+				EE00414F2DD0188F004CE0A1 /* Timer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EEDBBF312DD055A200F64A56 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEDBBF322DD055A200F64A56 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A21B79527EE31A30009E5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6HDG24ZGVT;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A21B79627EE31A30009E5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6HDG24ZGVT;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8A21B79827EE31A30009E5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pomenetes/Pomenetes.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pomenetes/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Allow changing the state of Do Not Disturb via a shortcut";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2025 Tommy Nguyen. All rights reserved. https://github.com/tuannvm/Pomenetes\nFork: https://github.com/AuroraWright/TomatoBar";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuannvm.Pomenetes;
+				PRODUCT_NAME = Pomenetes;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Debug;
+		};
+		8A21B79927EE31A30009E5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pomenetes/Pomenetes.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pomenetes/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Allow changing the state of Do Not Disturb via a shortcut";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2025 Tommy Nguyen. All rights reserved. https://github.com/tuannvm/Pomenetes\nFork: https://github.com/AuroraWright/TomatoBar";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuannvm.Pomenetes;
+				PRODUCT_NAME = Pomenetes;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A21B78327EE31A20009E5DB /* Build configuration list for PBXProject "Pomenetes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A21B79527EE31A30009E5DB /* Debug */,
+				8A21B79627EE31A30009E5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8A21B79727EE31A30009E5DB /* Build configuration list for PBXNativeTarget "Pomenetes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A21B79827EE31A30009E5DB /* Debug */,
+				8A21B79927EE31A30009E5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A74039E27FA19BB00E7F90B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		8A8CFE3E2821D8C300F9F303 /* XCRemoteSwiftPackageReference "SwiftState" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactKit/SwiftState";
+			requirement = {
+				branch = swift/5.0;
+				kind = branch;
+			};
+		};
+		8AA5B3E9281295DB00BE1A6C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A74039F27FA19BB00E7F90B /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A74039E27FA19BB00E7F90B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
+		8A8CFE3F2821D8C300F9F303 /* SwiftState */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A8CFE3E2821D8C300F9F303 /* XCRemoteSwiftPackageReference "SwiftState" */;
+			productName = SwiftState;
+		};
+		8AA5B3EA281295DB00BE1A6C /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AA5B3E9281295DB00BE1A6C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8A21B78027EE31A20009E5DB /* Project object */;
+}
