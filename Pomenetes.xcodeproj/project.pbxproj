@@ -353,7 +353,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Allow changing the state of Do Not Disturb via a shortcut";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2025 Tommy Nguyen. All rights reserved. https://github.com/ivoronin/TomatoBar\nFork: https://github.com/AuroraWright/TomatoBar";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2025 Tommy Nguyen. All rights reserved. https://github.com/tuannvm/Pomenetes\nFork: https://github.com/AuroraWright/TomatoBar";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -390,7 +390,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Allow changing the state of Do Not Disturb via a shortcut";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2025 Tommy Nguyen. All rights reserved. https://github.com/ivoronin/TomatoBar\nFork: https://github.com/AuroraWright/TomatoBar";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2025 Tommy Nguyen. All rights reserved. https://github.com/tuannvm/Pomenetes\nFork: https://github.com/AuroraWright/TomatoBar";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
