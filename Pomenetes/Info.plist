@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>Pomenetes</string>
+	<key>CFBundleDisplayName</key>
+	<string>Pomenetes</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLIconFile</key>
+			<string></string>
+			<key>CFBundleURLName</key>
+			<string>com.tuannvm.Pomenetes</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>pomenetes</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
