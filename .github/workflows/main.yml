@@ -35,8 +35,8 @@ jobs:
 
       - name: Build archive and app
         run: |
-          xcodebuild archive -project Pomenetes.xcodeproj -scheme Pomenetes -configuration Release -archivePath Pomenetes.xcarchive
-          xcodebuild -exportArchive -archivePath Pomenetes.xcarchive -exportOptionsPlist export_options.plist -exportPath .
+          xcodebuild archive -project Pomenetes.xcodeproj -scheme Pomenetes -configuration Release -archivePath Pomenetes.xcarchive CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+          xcodebuild -exportArchive -archivePath Pomenetes.xcarchive -exportOptionsPlist export_options.plist -exportPath . CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
           zip -r "Pomenetes-${{ env.version }}.zip" "Pomenetes.app"
 
       - name: Upload build artifact (for debugging)
