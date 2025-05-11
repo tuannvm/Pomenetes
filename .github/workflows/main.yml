@@ -1,57 +1,48 @@
-name: main
+name: Build & Release
 
 on:
   push:
     branches:
-      - '*'
+      - main
     tags:
       - 'v*'
 
 jobs:
   build:
-    runs-on: macos-12
+    runs-on: macos-latest
 
     steps:
-      - name: Delete old prerelease
-        if: github.ref_type == 'branch'
-        uses: dev-drprasad/delete-tag-and-release@v0.2.1
-        with:
-          delete_release: true
-          tag_name: prerelease
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Set version for tag
-        if: github.ref_type == 'tag'
-        run: echo "version=$(git describe --tags --match 'v*')" >> $GITHUB_ENV
+      - name: Set version from tag
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: echo "version=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
 
       - name: Set version for branch
-        if: github.ref_type == 'branch'
-        run: echo "version=$(git describe --tags)" >> $GITHUB_ENV
+        if: "!startsWith(github.ref, 'refs/tags/v')"
+        run: echo "version=$(git describe --tags --always)" >> $GITHUB_ENV
 
-      - name: Build
+      - name: Build archive and app
         env:
           DEVELOPER_DIR: /Applications/Xcode_14.1.app/Contents/Developer
         run: |
-          xcodebuild archive -project TomatoBar.xcodeproj -scheme TomatoBar -configuration Release -archivePath TomatoBar.xcarchive MARKETING_VERSION=${{github.ref_name}}
-          xcodebuild archive -archivePath TomatoBar.xcarchive -exportArchive -exportOptionsPlist export_options.plist -exportPath .
-          zip -r "TomatoBar-${{env.version}}.zip" "TomatoBar.app"
+          xcodebuild archive -project Pomenetes.xcodeproj -scheme Pomenetes -configuration Release -archivePath Pomenetes.xcarchive
+          xcodebuild -exportArchive -archivePath Pomenetes.xcarchive -exportOptionsPlist export_options.plist -exportPath .
+          zip -r "Pomenetes-${{ env.version }}.zip" "Pomenetes.app"
 
-      - name: Release
-        if: github.ref_type == 'tag'
+      - name: Upload build artifact (for debugging)
+        uses: actions/upload-artifact@v3
+        with:
+          name: Pomenetes-app
+          path: Pomenetes*.zip
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v1
         with:
-          files: TomatoBar-${{env.version}}.zip
-
-      - name: Prerelease
-        if: github.ref_type == 'branch'
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: prerelease
-          prerelease: true
-          files: TomatoBar-${{env.version}}.zip
+          files: Pomenetes-${{ env.version }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
